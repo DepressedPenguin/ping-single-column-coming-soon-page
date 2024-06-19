@@ -1,0 +1,48 @@
+// .SCSS FILE FOR INTRO PAGE
+.Intro_Card {
+  width: 100%;
+  height: 200px;
+  // border: 1px solid red;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+// HEADLINE DIV
+.headlineLine {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.dote_green {
+  color: green;
+}
+
+.solgnaH1 {
+  font-weight: 300;
+  font-size: 40px;
+  color: royalblue;
+}
+
+.soonSpan {
+  color: #191919;
+  font-weight: 700;
+}
+
+.para_subscribe {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .inputStyle {
+    width: 400px;
+  }
+
+  .solgnaH1 {
+    font-size: 1.8rem;
+  }
+}

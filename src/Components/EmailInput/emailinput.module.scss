@@ -1,0 +1,90 @@
+// .SCSS FILE FOR INPUT
+.cardInput {
+  // width: 30%;
+  // padding: 10px;
+  // border: 1px solid red;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+// INPUT EMAIL
+.inputStyle {
+  width: 500px;
+
+  height: 55px;
+  border-radius: 20px;
+  padding: 5px 20px;
+  // border: 1px solid white;
+  border: none;
+  background-color: whitesmoke;
+  color: black;
+  box-shadow: 3px 3px 3px royalblue;
+  font-size: 20px;
+}
+
+// PLACEHOLDER INPUT
+.inputStyle::placeholder {
+  // padding: 20px; // Remove this line as it doesn't work as expected
+  color: black;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+// FOCUS
+.inputStyle:focus {
+  border: 1px solid rgb(221, 216, 216);
+  outline: none;
+}
+
+// BTN NOTIFY
+.btn_notify {
+  background-color: royalblue;
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 17px;
+  color: white;
+  width: 150px;
+  cursor: pointer;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.FeaturesSmall {
+  font-family: 900;
+  text-decoration: underline;
+  font-size: 11px;
+  color: black;
+  letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .inputStyle {
+    width: 400px;
+  }
+
+  .btn_notify {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 344px) and (max-height: 882px) and (orientation: portrait) {
+  .inputStyle {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
+  .inputStyle {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 360px) and (max-height: 740px) and (orientation: portrait) {
+  .inputStyle {
+    width: 300px;
+  }
+}

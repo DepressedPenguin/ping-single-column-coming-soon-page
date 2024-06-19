@@ -1,0 +1,33 @@
+.slidesCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.images {
+  height: 300px;
+  animation: move_slider 8s linear infinite;
+  position: relative;
+  transform: (20px);
+  transition: all 1s;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+}
+
+@keyframes move_slider {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
