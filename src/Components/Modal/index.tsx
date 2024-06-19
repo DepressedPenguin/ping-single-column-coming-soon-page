@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./modal.module.scss";
 
-export default function Modal({ closeBtn, email }) {
+interface ModalProps {
+  closeBtn: () => void;
+  email: string;
+}
+
+const Modal: React.FC<ModalProps> = ({ closeBtn, email }) => {
   return (
     <>
       <div className={styles.modal}>
@@ -11,10 +16,10 @@ export default function Modal({ closeBtn, email }) {
             <i className={`${styles.iconCheck} bi bi-check-circle`}></i>
           </div>
           <div className={styles.checkMark}>
-            <p>Email : {email}</p>
+            <p>Email: {email}</p>
           </div>
           <div className={styles.checkMark_update}>
-            <p>You Will get Notify For Any Update</p>
+            <p>You will get notified of any updates</p>
             <p>Thank you 😁</p>
           </div>
           <button onClick={closeBtn} className={styles.btn_close}>
@@ -24,4 +29,6 @@ export default function Modal({ closeBtn, email }) {
       </div>
     </>
   );
-}
+};
+
+export default Modal;
