@@ -1,8 +1,11 @@
 [
   {
-    "feature_1": "../src/assets/images/slider_1.png"
+    "feature_1": "https://i.imgur.com/qoMU0S5.png"
   },
   {
-    "feature_1": "../src/assets/images/slider_2.png"
+    "feature_1": "https://i.imgur.com/wt8k7jV.png"
+  },
+  {
+    "feature_1": "https://i.imgur.com/N71YJpp.png"
   }
 ]
